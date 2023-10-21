@@ -1,40 +1,4 @@
 /* 이현정 구현 부분*/
-/* popup */
-
-let popup = document.querySelector(".popup");
-let pCloseBtn = popup.querySelector("#close");
-let dayCheck = popup.querySelector("#daycheck");
-
-function setCookie(name, value, day) {
-  let date = new Date();
-  date.setDate(date.getDate() + day);
-  document.cookie = `${name}=${value};expires=${date.toUTCString()}`;
-}
-
-function cookieCheck(name) {
-  let cookieArr = document.cookie.split(";");
-  let visited = false;
-  for (let cookie of cookieArr) {
-    if (cookie.search(name) > -1) {
-      visited = true;
-      break;
-    }
-  }
-  if (!visited) {
-    popup.setAttribute("open", "");
-  }
-}
-cookieCheck("team");
-
-pCloseBtn.addEventListener("click", () => {
-  popup.removeAttribute("open");
-  if (dayCheck.checked) {
-    setCookie("team", "marathon", 1);
-  } else {
-    setCookie("team", "marathon", -1);
-  }
-});
-
 /* main carousel */
 
 let mainSlideWrapper = document.querySelector(".mainslide-wrapper");
@@ -226,9 +190,8 @@ let rcSlideWrapper = document.querySelector(".rc-slide-wrapper"), //ul의 부모
   rcNextBtn = document.querySelector("#rc-next");
 
 //슬라이드 가로 너비지정
-rcSlideContainer.style.width = `${
-  rcSlidesCount * (rcSlideWidth + rcSlideMargin)
-}px`;
+rcSlideContainer.style.width = `${rcSlidesCount * (rcSlideWidth + rcSlideMargin)
+  }px`;
 
 //슬라이드 이동함수
 function rcMoveSlide(num) {
@@ -270,9 +233,8 @@ let newSlideWrapper = document.querySelector(".new-slide-wrapper"),
   newNextBtn = document.querySelector("#new-next");
 
 //슬라이드 가로 너비지정
-newSlideContainer.style.width = `${
-  newSlidesCount * (newSlideWidth + newSlideMargin)
-}px`;
+newSlideContainer.style.width = `${newSlidesCount * (newSlideWidth + newSlideMargin)
+  }px`;
 
 //슬라이드 이동함수
 function newMoveSlide(num) {
@@ -443,8 +405,8 @@ seeTypeAll.addEventListener("click", () => {
 // 슬라이드
 
 let allslideContainer = allSlideWrapper.querySelector(
-    ".main5-big-slide-container"
-  ),
+  ".main5-big-slide-container"
+),
   allslides = allslideContainer.querySelectorAll(".main5-slide-container"),
   slides1 = allslideContainer.querySelector(
     ".main5-slide-container:first-child"
@@ -479,9 +441,8 @@ function allmoveSlide(num) {
   if (allcurrentSlideIdx == 11) {
     slidePageNum.innerText = `${gameCardsCount} / ${gameCardsCount}`;
   } else {
-    slidePageNum.innerText = `${
-      (allcurrentSlideIdx + 1) * 4
-    } / ${gameCardsCount}`;
+    slidePageNum.innerText = `${(allcurrentSlideIdx + 1) * 4
+      } / ${gameCardsCount}`;
   }
   allslides[allcurrentSlideIdx].classList.add("active");
 }
@@ -539,3 +500,8 @@ bannerImg.addEventListener("mouseout", () => {
     bannerImg.classList.remove("active");
   }
 });
+
+// popup
+
+
+/* 한지희 구현 부분 종료 */
