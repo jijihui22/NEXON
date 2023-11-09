@@ -1464,11 +1464,65 @@ address {
 /* POPUP */
 .popup {
   position: fixed;
+  top: 75px;
   left: 80px;
-  top: 80px;
-  border: 5px solid #3182f6;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-  padding: 20px;
-  border-radius: 10px;
   z-index: 20;
+  margin: 0;
+  padding: 25px;
+  border: 3px solid #3182f6;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.popup h2 {
+  text-indent: -99999em;
+}
+
+.popup h2 span {
+  display: block;
+  width: 175px;
+  height: 32px;
+  background-image: url(../images/nexon.png);
+  background-repeat: no-repeat;
+  background-size: 175px;
+}
+
+.popup h3 {
+  padding: 16px 0;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.popup h4 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.popup p {
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.popup label {
+  margin-right: 5px;
+}
+
+.popup button {
+  float: right;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 13%;
+}
+
+.popup hr {
+  margin: 17px 0;
+  height: 2px;
+  background: #3182f6;
+  border: 0;
+}
+
+.popup hr:last-child {
+  margin: 17px 0 21px 0;
 }

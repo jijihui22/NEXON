@@ -502,6 +502,40 @@ bannerImg.addEventListener("mouseout", () => {
 });
 
 // popup
+let popup = document.querySelector('.popup'),
+  closeBtn = popup.querySelector('#close'),
+  dayCheck = popup.querySelector('#day-check');
 
+function setCookie(name, value, day) {
+  let date = new Date();
+  date.setDate(date.getDate() + day);
+  document.cookie = `${name}=${value};expires=${date.toUTCString()}`;
+}
+
+function cookieCheck(name) {
+  let cookieArr = document.cookie.split(';');
+  let visited = false;
+
+  for (let cookie of cookieArr) {
+    if (cookie.search(name) > -1) {
+      visited = true;
+      break;
+    }
+  }
+
+  if (!visited) {
+    popup.setAttribute('open', '');
+  }
+};
+cookieCheck('ABC');
+
+closeBtn.addEventListener('click', () => {
+  popup.removeAttribute('open');
+  if (dayCheck.checked) {
+    setCookie('ABC', 'home', 1);
+  } else {
+    setCookie('ABC', 'home', -1);
+  }
+});
 
 /* 한지희 구현 부분 종료 */
