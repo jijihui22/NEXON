@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="The Rock" />
-  <meta property="og:type" content="video.movie" />
-  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-
+  <meta property="og:title" content="The Rock">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/">
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -37,7 +35,6 @@
     })(window, document, 'script', 'dataLayer', 'GTM-K7CL4G3H');</script>
   <!-- End Google Tag Manager -->
 </head>
-
 <body>
   <!-- COOKIE POPUP -->
   <dialog class="popup cf">
@@ -57,13 +54,14 @@
     <p>이*서 : 전체게임</p>
     <p>한지희 : 배너, 추천영상, 전체서비스, 팝업</p>
     <hr>
-    <label for="day-check"  aria-label="오늘 하루 안보기">오늘 하루 안보기</label>
+    <label for="day-check" aria-label="오늘 하루 안보기">오늘 하루 안보기</label>
     <input type="checkbox" id="day-check">
     <button type="button" id="close">close</button>
   </dialog>
   <!-- COOKIE POPUP END -->
   <!-- 이현정 구현 시작 HEADER & NAV BAR & MAIN-01-CAROUSEL -->
   <!-- HEADER -->
+  <a href="#main_content" class="skip_to_content">Skip to Content</a>
   <header class="contaniner">
     <div>
       <h1 class="main-tt">
@@ -556,7 +554,7 @@
             <a href="#recommend-video">추천영상</a>
           </li>
           <li>
-            <a href="">전체서비스</a>
+            <a href="#all-service">전체서비스</a>
             <div class="menu-bar-allservice content-desc-bl mono-light1-bg">
               <ul class="menu-bar-allservicebox">
                 <li>
@@ -640,6 +638,7 @@
     <!-- 이강산 구현 시작 RECOMMENDED & NEW GAMES CAROUSEL -->
     <!-- RECOMMNED GAMES -->
     <section class="recommend-game big-top-pd" id="recommend-game">
+      <div id="main_content"></divi>
       <h2 class="main-stt">추천게임</h2>
       <p class="content-stt">#지금 가장 많이 HOT한 게임</p>
       <div class="rc-slide-wrapper">
@@ -2022,8 +2021,8 @@
     </section>
   </main>
   <footer>
-    <div class="all-service big-top-pd">
-      <h5 class="container main-stt">전체서비스</h5>
+    <div class="all-service big-top-pd" id="all-service">
+      <h2 class="container main-stt">전체서비스</h2>
       <div class="first-line">
         <ul class="container cf">
           <li>

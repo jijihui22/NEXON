@@ -1,3 +1,19 @@
+.skip_to_content{
+  background: #000;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  padding: 10px 20px;
+  text-decoration: none;
+  z-index: 21;
+  transition: transform .3s
+}
+.skip_to_content:focus{
+  transform : none
+}
+
 /* HEADER */
 header .main-tt {
   padding-top: 71px;
@@ -1237,6 +1253,9 @@ header {
   opacity: 0;
 }
 
+.video-wrapper .video-img-border a:focus .hover-img{
+  opacity: 0;
+}
 .video-wrapper .video-img-border .hover-img {
   width: 352px;
   height: 192px;
@@ -1264,20 +1283,26 @@ header {
 .video-wrapper li .video-btn {
   display: inline-block;
   margin-bottom: 30px;
-  padding: 10px 30px;
+  padding: 8px 28px;
+  border: 3px solid #4593fc;
   border-radius: 5px;
-  background: #ffffff;
+  background: #4593fc;
   font-weight: 600;
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
 .video-wrapper li .video-btn:hover {
-  color: #3182f6;
+  background: #fff;
+  border: 3px solid rgb(69, 147, 252, 0.75);
+  color: rgb(69, 147, 252, 0.9);
 }
 
 .video-wrapper li .video-btn:focus {
-  box-shadow: 0 0 0 3px #3182f6 inset;
+  background-color: #000;
+  border: 3px solid #000;
+  color: #fff;
 }
 
 /* FOOTER-01 */
@@ -1303,7 +1328,10 @@ header {
 .all-service dl dt {
   margin-bottom: 20px;
 }
-
+.all-service dl dt a:hover,
+.all-service dl dd a:hover {
+  color: #4593fc;
+}
 .last-line li:nth-child(2) dt:last-child {
   padding-top: 20px;
 }
