@@ -1,2 +1,3 @@
-User-agent: *
-Allow: /
+User-agent: Yeti
+Allow:/
+Sitemap: https://project-hjh-nexon.netlify.app/sitemap.xml
