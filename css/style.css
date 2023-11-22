@@ -1061,9 +1061,9 @@ header{
   display: inline-block;
   margin-bottom: 30px;
   padding: 8px 28px;
-  border: 3px solid #2272eb;
+  border: 3px solid #000;
   border-radius: 5px;
-  background: #2272eb;
+  background: #000;
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
