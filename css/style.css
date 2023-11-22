@@ -1060,18 +1060,18 @@ header{
 .video-wrapper li .video-btn{
   display: inline-block;
   margin-bottom: 32px;
-  padding: 7px 26px;
+  padding: 7px 27.5px;
   border: 4.5px solid rgb(69, 147, 252, 0.9);
   border-radius: 5px;
   background: #ffffff;
   font-weight: 600;
-  font-size: 18px;
-  color: #3182f6;
+  font-size: 17px;
+  color: #297af3;
   box-sizing: border-box;
 }
 .video-wrapper li .video-btn:hover{
   background: rgb(69, 147, 252, 0.9);
-  border: 4.5px solid rgb(69, 147, 252, 0.9);
+  border: 4.5px solid rgb(69, 147, 252, 0.15);
   color: #ffffff;
 }
 .video-wrapper li .video-btn:focus{
