@@ -1061,7 +1061,7 @@ header{
   display: inline-block;
   margin-bottom: 32px;
   padding: 7px 27.5px;
-  border: 4.5px solid rgb(69, 147, 252, 0.9);
+  border: 4.5px solid rgb(69, 147, 252, 0.85);
   border-radius: 5px;
   background: #ffffff;
   font-weight: 600;
@@ -1070,8 +1070,8 @@ header{
   box-sizing: border-box;
 }
 .video-wrapper li .video-btn:hover{
-  background: rgb(69, 147, 252, 0.9);
-  border: 4.5px solid rgb(69, 147, 252, 0.15);
+  background: rgb(69, 147, 252, 0.85);
+  border: 4.5px solid rgb(69, 147, 252, 0.9);
   color: #ffffff;
 }
 .video-wrapper li .video-btn:focus{
