@@ -1061,9 +1061,9 @@ header{
   display: inline-block;
   margin-bottom: 30px;
   padding: 8px 28px;
-  border: 3px solid #428dee;
+  border: 3px solid #2d7bef;
   border-radius: 5px;
-  background: #428dee;
+  background: #2d7bef;
   font-weight: 600;
   font-size: 17px;
   color: #ffffff;
@@ -1071,8 +1071,8 @@ header{
 }
 .video-wrapper li .video-btn:hover{
   background: #fff;
-  border: 3px solid #428dee;
-  color: #428dee;
+  border: 3px solid rgb(69, 147, 252, 0.75);
+  color: rgb(69, 147, 252, 0.9);
 }
 .video-wrapper li .video-btn:focus{
   background-color: #000;
